@@ -4,11 +4,11 @@ until = webdriver.until
 key = webdriver.Key
 
 let driver = new webdriver.Builder().forBrowser("chrome").build()
-driver.get("http://localhost:3000/")
-driver.findElement(By.id('userId')).sendKeys('malav');
-driver.findElement(By.id('password')).sendKeys('Malav@12345',key.RETURN);
+driver.get("http://thisis your project url")
+driver.findElement(By.id('userId')).sendKeys('your id name');
+driver.findElement(By.id('password')).sendKeys('your id password',key.RETURN);
 setTimeout(()=>{
-    driver.findElement(By.name('logs')).click(); 
+    driver.findElement(By.name('this is your btn id or name')).click(); 
 },2000)
 
 
